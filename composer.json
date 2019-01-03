@@ -1,5 +1,5 @@
 {
-  "name": "DPDBeNeLux/DIS-2.0-PHP-SDK",
+  "name": "dpdbenelux/dis-2-php-sdk",
   "description": "Library to connect to DPD's SOAP service called DIS 2.0",
   "license": "GPL-3.0-or-later",
   "require": {
