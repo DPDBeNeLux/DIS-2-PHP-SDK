@@ -24,24 +24,24 @@ use DPDBenelux\SDK\DataObject;
 class Shipment extends DataObject
 {
     /**
-     * @var string $CustomerReferenceNumber1
+     * @var string $CustomerReference1
      */
-    protected $CustomerReferenceNumber1;
+    protected $CustomerReference1;
 
     /**
-     * @var string $CustomerReferenceNumber2
+     * @var string $CustomerReference2
      */
-    protected $CustomerReferenceNumber2;
+    protected $CustomerReference2;
 
     /**
-     * @var string $CustomerReferenceNumber3
+     * @var string $CustomerReference3
      */
-    protected $CustomerReferenceNumber3;
+    protected $CustomerReference3;
 
     /**
-     * @var string $CustomerReferenceNumber4
+     * @var string $CustomerReference4
      */
-    protected $CustomerReferenceNumber4;
+    protected $CustomerReference4;
 
     /**
      * @var string $SendingDepot
@@ -49,14 +49,14 @@ class Shipment extends DataObject
     protected $SendingDepot;
 
     /**
-     * @var string $ShipmentVolume
+     * @var string $Volume
      */
-    protected $ShipmentVolume;
+    protected $Volume;
 
     /**
-     * @var int $ShipmentWeight
+     * @var int $Weight
      */
-    protected $ShipmentWeight;
+    protected $Weight;
 
     /**
      * @var string $ExpectedSendingDate
@@ -91,65 +91,65 @@ class Shipment extends DataObject
     /**
      * @return string
      */
-    public function getCustomerReferenceNumber1()
+    public function getCustomerReference1()
     {
-        return $this->CustomerReferenceNumber1;
+        return $this->CustomerReference1;
     }
 
     /**
-     * @param string $CustomerReferenceNumber1
+     * @param string $CustomerReference1
      */
-    public function setCustomerReferenceNumber1($CustomerReferenceNumber1)
+    public function setCustomerReference1($CustomerReference1)
     {
-        $this->CustomerReferenceNumber1 = $CustomerReferenceNumber1;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCustomerReferenceNumber2()
-    {
-        return $this->CustomerReferenceNumber2;
-    }
-
-    /**
-     * @param string $CustomerReferenceNumber2
-     */
-    public function setCustomerReferenceNumber2($CustomerReferenceNumber2)
-    {
-        $this->CustomerReferenceNumber2 = $CustomerReferenceNumber2;
+        $this->CustomerReference1 = $CustomerReference1;
     }
 
     /**
      * @return string
      */
-    public function getCustomerReferenceNumber3()
+    public function getCustomerReference2()
     {
-        return $this->CustomerReferenceNumber3;
+        return $this->CustomerReference2;
     }
 
     /**
-     * @param string $CustomerReferenceNumber3
+     * @param string $CustomerReference2
      */
-    public function setCustomerReferenceNumber3($CustomerReferenceNumber3)
+    public function setCustomerReference2($CustomerReference2)
     {
-        $this->CustomerReferenceNumber3 = $CustomerReferenceNumber3;
+        $this->CustomerReference2 = $CustomerReference2;
     }
 
     /**
      * @return string
      */
-    public function getCustomerReferenceNumber4()
+    public function getCustomerReference3()
     {
-        return $this->CustomerReferenceNumber4;
+        return $this->CustomerReference3;
     }
 
     /**
-     * @param string $CustomerReferenceNumber4
+     * @param string $CustomerReference3
      */
-    public function setCustomerReferenceNumber4($CustomerReferenceNumber4)
+    public function setCustomerReference3($CustomerReference3)
     {
-        $this->CustomerReferenceNumber4 = $CustomerReferenceNumber4;
+        $this->CustomerReference3 = $CustomerReference3;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustomerReference4()
+    {
+        return $this->CustomerReference4;
+    }
+
+    /**
+     * @param string $CustomerReference4
+     */
+    public function setCustomerReference4($CustomerReference4)
+    {
+        $this->CustomerReference4 = $CustomerReference4;
     }
 
     /**
@@ -171,33 +171,33 @@ class Shipment extends DataObject
     /**
      * @return string
      */
-    public function getShipmentVolume()
+    public function getVolume()
     {
-        return $this->ShipmentVolume;
+        return $this->Volume;
     }
 
     /**
-     * @param string $ShipmentVolume
+     * @param string $Volume
      */
-    public function setShipmentVolume($ShipmentVolume)
+    public function setVolume($Volume)
     {
-        $this->ShipmentVolume = $ShipmentVolume;
+        $this->Volume = $Volume;
     }
 
     /**
      * @return int
      */
-    public function getShipmentWeight()
+    public function getWeight()
     {
-        return $this->ShipmentWeight;
+        return $this->Weight;
     }
 
     /**
-     * @param int $ShipmentWeight
+     * @param int $Weight
      */
-    public function setShipmentWeight($ShipmentWeight)
+    public function setWeight($Weight)
     {
-        $this->ShipmentWeight = $ShipmentWeight;
+        $this->Weight = $Weight;
     }
 
     /**

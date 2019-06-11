@@ -29,34 +29,34 @@ class Parcel extends DataObject
     protected $ParcelNumber;
 
     /**
-     * @var string $CustomerReferenceNumber1
+     * @var string $CustomerReference1
      */
-    protected $CustomerReferenceNumber1;
+    protected $CustomerReference1;
 
     /**
-     * @var string $CustomerReferenceNumber2
+     * @var string $CustomerReference2
      */
-    protected $CustomerReferenceNumber2;
+    protected $CustomerReference2;
 
     /**
-     * @var string $CustomerReferenceNumber3
+     * @var string $CustomerReference3
      */
-    protected $CustomerReferenceNumber3;
+    protected $CustomerReference3;
 
     /**
-     * @var string $CustomerReferenceNumber4
+     * @var string $CustomerReference4
      */
-    protected $CustomerReferenceNumber4;
+    protected $CustomerReference4;
 
     /**
-     * @var string $ParcelVolume
+     * @var string $Volume
      */
-    protected $ParcelVolume;
+    protected $Volume;
 
     /**
-     * @var int $ParcelWeight
+     * @var int $Weight
      */
-    protected $ParcelWeight;
+    protected $Weight;
 
     /**
      * @var Cod $Cod
@@ -82,97 +82,97 @@ class Parcel extends DataObject
     /**
      * @return string
      */
-    public function getCustomerReferenceNumber1()
+    public function getCustomerReference1()
     {
-        return $this->CustomerReferenceNumber1;
+        return $this->CustomerReference1;
     }
 
     /**
-     * @param string $CustomerReferenceNumber1
+     * @param string $CustomerReference1
      */
-    public function setCustomerReferenceNumber1($CustomerReferenceNumber1)
+    public function setCustomerReference1($CustomerReference1)
     {
-        $this->CustomerReferenceNumber1 = $CustomerReferenceNumber1;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCustomerReferenceNumber2()
-    {
-        return $this->CustomerReferenceNumber2;
-    }
-
-    /**
-     * @param string $CustomerReferenceNumber2
-     */
-    public function setCustomerReferenceNumber2($CustomerReferenceNumber2)
-    {
-        $this->CustomerReferenceNumber2 = $CustomerReferenceNumber2;
+        $this->CustomerReference1 = $CustomerReference1;
     }
 
     /**
      * @return string
      */
-    public function getCustomerReferenceNumber3()
+    public function getCustomerReference2()
     {
-        return $this->CustomerReferenceNumber3;
+        return $this->CustomerReference2;
     }
 
     /**
-     * @param string $CustomerReferenceNumber3
+     * @param string $CustomerReference2
      */
-    public function setCustomerReferenceNumber3($CustomerReferenceNumber3)
+    public function setCustomerReference2($CustomerReference2)
     {
-        $this->CustomerReferenceNumber3 = $CustomerReferenceNumber3;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCustomerReferenceNumber4()
-    {
-        return $this->CustomerReferenceNumber4;
-    }
-
-    /**
-     * @param string $CustomerReferenceNumber4
-     */
-    public function setCustomerReferenceNumber4($CustomerReferenceNumber4)
-    {
-        $this->CustomerReferenceNumber4 = $CustomerReferenceNumber4;
+        $this->CustomerReference2 = $CustomerReference2;
     }
 
     /**
      * @return string
      */
-    public function getParcelVolume()
+    public function getCustomerReference3()
     {
-        return $this->ParcelVolume;
+        return $this->CustomerReference3;
     }
 
     /**
-     * @param string $ParcelVolume
+     * @param string $CustomerReference3
      */
-    public function setParcelVolume($ParcelVolume)
+    public function setCustomerReference3($CustomerReference3)
     {
-        $this->ParcelVolume = $ParcelVolume;
+        $this->CustomerReference3 = $CustomerReference3;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustomerReference4()
+    {
+        return $this->CustomerReference4;
+    }
+
+    /**
+     * @param string $CustomerReference4
+     */
+    public function setCustomerReference4($CustomerReference4)
+    {
+        $this->CustomerReference4 = $CustomerReference4;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVolume()
+    {
+        return $this->Volume;
+    }
+
+    /**
+     * @param string $Volume
+     */
+    public function setVolume($Volume)
+    {
+        $this->Volume = $Volume;
     }
 
     /**
      * @return int
      */
-    public function getParcelWeight()
+    public function getWeight()
     {
-        return $this->ParcelWeight;
+        return $this->Weight;
     }
 
     /**
-     * @param int $ParcelWeight
+     * @param int $Weight
      */
-    public function setParcelWeight($ParcelWeight)
+    public function setWeight($Weight)
     {
-        $this->ParcelWeight = $ParcelWeight;
+        $this->Weight = $Weight;
     }
 
     /**

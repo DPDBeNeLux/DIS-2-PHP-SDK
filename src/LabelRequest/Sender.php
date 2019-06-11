@@ -94,6 +94,46 @@ class Sender extends DataObject
     protected $Comment;
 
     /**
+     * @var string
+     */
+    protected $CompanyName;
+
+    /**
+     * @var bool
+     */
+    protected $IsCommercialAddress;
+
+    /**
+     * @var string
+     */
+    protected $Floor;
+
+    /**
+     * @var string
+     */
+    protected $Building;
+
+    /**
+     * @var string
+     */
+    protected $Department;
+
+    /**
+     * @var string
+     */
+    protected $Website;
+
+    /**
+     * @var string
+     */
+    protected $VatNumber;
+
+    /**
+     * @var string
+     */
+    protected $EoriNumber;
+
+    /**
      * @return string
      */
     public function getName1()
@@ -342,6 +382,150 @@ class Sender extends DataObject
     public function setComment($Comment)
     {
         $this->Comment = $Comment;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCompanyName()
+    {
+        return $this->CompanyName;
+    }
+
+    /**
+     * @param string $CompanyName
+     * @return Sender
+     */
+    public function setCompanyName($CompanyName)
+    {
+        $this->CompanyName = $CompanyName;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIsCommercialAddress()
+    {
+        return $this->IsCommercialAddress;
+    }
+
+    /**
+     * @param bool $IsCommercialAddress
+     * @return Sender
+     */
+    public function setIsCommercialAddress($IsCommercialAddress)
+    {
+        $this->IsCommercialAddress = $IsCommercialAddress;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFloor()
+    {
+        return $this->Floor;
+    }
+
+    /**
+     * @param string $Floor
+     * @return Sender
+     */
+    public function setFloor($Floor)
+    {
+        $this->Floor = $Floor;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuilding()
+    {
+        return $this->Building;
+    }
+
+    /**
+     * @param string $Building
+     * @return Sender
+     */
+    public function setBuilding($Building)
+    {
+        $this->Building = $Building;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDepartment()
+    {
+        return $this->Department;
+    }
+
+    /**
+     * @param string $Department
+     * @return Sender
+     */
+    public function setDepartment($Department)
+    {
+        $this->Department = $Department;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getWebsite()
+    {
+        return $this->Website;
+    }
+
+    /**
+     * @param string $Website
+     * @return Sender
+     */
+    public function setWebsite($Website)
+    {
+        $this->Website = $Website;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVatNumber()
+    {
+        return $this->VatNumber;
+    }
+
+    /**
+     * @param string $VatNumber
+     * @return Sender
+     */
+    public function setVatNumber($VatNumber)
+    {
+        $this->VatNumber = $VatNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEoriNumber()
+    {
+        return $this->EoriNumber;
+    }
+
+    /**
+     * @param string $EoriNumber
+     * @return Sender
+     */
+    public function setEoriNumber($EoriNumber)
+    {
+        $this->EoriNumber = $EoriNumber;
         return $this;
     }
 }

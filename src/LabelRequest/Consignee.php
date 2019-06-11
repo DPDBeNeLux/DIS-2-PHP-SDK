@@ -1,127 +1,78 @@
 <?php
-/**
- * This file is part of the DIS 2.0 PHP SDK of DPD Nederland B.V.
- *
- * Copyright (C) 2018  DPD Nederland B.V.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
+
 namespace DPDBenelux\SDK\LabelRequest;
 
-use DPDBenelux\SDK\DataObject;
-
-class Recipient extends DataObject
+class Consignee
 {
     /**
-     * @var string $Name1
+     * @var string
      */
     protected $Name1;
 
     /**
-     * @var string $Name2
+     * @var string
      */
     protected $Name2;
 
     /**
-     * @var string $Street
+     * @var string
      */
     protected $Street;
 
     /**
-     * @var string $HouseNo
+     * @var string
      */
     protected $HouseNo;
 
     /**
-     * @var string $State
+     * @var string
      */
     protected $State;
 
     /**
-     * @var string $Country
+     * @var string
      */
     protected $Country;
 
     /**
-     * @var string $ZipCode
+     * @var string
      */
     protected $ZipCode;
 
     /**
-     * @var string $City
+     * @var string
      */
     protected $City;
 
     /**
-     * @var string $Gln
+     * @var int
      */
     protected $Gln;
 
     /**
-     * @var string $Contact
+     * @var string
      */
     protected $Contact;
 
     /**
-     * @var string $Phone
+     * @var string
      */
     protected $Phone;
 
     /**
-     * @var string $Fax
+     * @var string
      */
     protected $Fax;
 
     /**
-     * @var string $Email
+     * @var string
      */
     protected $Email;
 
     /**
-     * @var string $Comment
-     */
-    protected $Comment;
-
-    /**
      * @var string
      */
-    protected $CompanyName;
-
-    /**
-     * @var bool
-     */
-    protected $IsCommercialAddress;
-
-    /**
-     * @var string
-     */
-    protected $Floor;
-
-    /**
-     * @var string
-     */
-    protected $Building;
-
-    /**
-     * @var string
-     */
-    protected $Department;
-
-    /**
-     * @var string
-     */
-    protected $DoorCode;
+    protected $CustomerNumber;
 
     /**
      * @var string
@@ -143,7 +94,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Name1
-     * @return $this
+     * @return Consignee
      */
     public function setName1($Name1)
     {
@@ -161,7 +112,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Name2
-     * @return $this
+     * @return Consignee
      */
     public function setName2($Name2)
     {
@@ -179,7 +130,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Street
-     * @return $this
+     * @return Consignee
      */
     public function setStreet($Street)
     {
@@ -197,7 +148,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $HouseNo
-     * @return $this
+     * @return Consignee
      */
     public function setHouseNo($HouseNo)
     {
@@ -215,7 +166,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $State
-     * @return $this
+     * @return Consignee
      */
     public function setState($State)
     {
@@ -233,7 +184,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Country
-     * @return $this
+     * @return Consignee
      */
     public function setCountry($Country)
     {
@@ -251,7 +202,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $ZipCode
-     * @return $this
+     * @return Consignee
      */
     public function setZipCode($ZipCode)
     {
@@ -269,7 +220,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $City
-     * @return $this
+     * @return Consignee
      */
     public function setCity($City)
     {
@@ -278,7 +229,7 @@ class Recipient extends DataObject
     }
 
     /**
-     * @return string
+     * @return int
      */
     public function getGln()
     {
@@ -286,8 +237,8 @@ class Recipient extends DataObject
     }
 
     /**
-     * @param string $Gln
-     * @return $this
+     * @param int $Gln
+     * @return Consignee
      */
     public function setGln($Gln)
     {
@@ -305,7 +256,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Contact
-     * @return $this
+     * @return Consignee
      */
     public function setContact($Contact)
     {
@@ -323,7 +274,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Phone
-     * @return $this
+     * @return Consignee
      */
     public function setPhone($Phone)
     {
@@ -341,7 +292,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Fax
-     * @return $this
+     * @return Consignee
      */
     public function setFax($Fax)
     {
@@ -359,7 +310,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $Email
-     * @return $this
+     * @return Consignee
      */
     public function setEmail($Email)
     {
@@ -370,126 +321,18 @@ class Recipient extends DataObject
     /**
      * @return string
      */
-    public function getComment()
+    public function getCustomerNumber()
     {
-        return $this->Comment;
+        return $this->CustomerNumber;
     }
 
     /**
-     * @param string $Comment
-     * @return $this
+     * @param string $CustomerNumber
+     * @return Consignee
      */
-    public function setComment($Comment)
+    public function setCustomerNumber($CustomerNumber)
     {
-        $this->Comment = $Comment;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCompanyName()
-    {
-        return $this->CompanyName;
-    }
-
-    /**
-     * @param string $CompanyName
-     * @return Recipient
-     */
-    public function setCompanyName($CompanyName)
-    {
-        $this->CompanyName = $CompanyName;
-        return $this;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isIsCommercialAddress()
-    {
-        return $this->IsCommercialAddress;
-    }
-
-    /**
-     * @param bool $IsCommercialAddress
-     * @return Recipient
-     */
-    public function setIsCommercialAddress($IsCommercialAddress)
-    {
-        $this->IsCommercialAddress = $IsCommercialAddress;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getFloor()
-    {
-        return $this->Floor;
-    }
-
-    /**
-     * @param string $Floor
-     * @return Recipient
-     */
-    public function setFloor($Floor)
-    {
-        $this->Floor = $Floor;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getBuilding()
-    {
-        return $this->Building;
-    }
-
-    /**
-     * @param string $Building
-     * @return Recipient
-     */
-    public function setBuilding($Building)
-    {
-        $this->Building = $Building;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDepartment()
-    {
-        return $this->Department;
-    }
-
-    /**
-     * @param string $Department
-     * @return Recipient
-     */
-    public function setDepartment($Department)
-    {
-        $this->Department = $Department;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDoorCode()
-    {
-        return $this->DoorCode;
-    }
-
-    /**
-     * @param string $DoorCode
-     * @return Recipient
-     */
-    public function setDoorCode($DoorCode)
-    {
-        $this->DoorCode = $DoorCode;
+        $this->CustomerNumber = $CustomerNumber;
         return $this;
     }
 
@@ -503,7 +346,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $VatNumber
-     * @return Recipient
+     * @return Consignee
      */
     public function setVatNumber($VatNumber)
     {
@@ -521,7 +364,7 @@ class Recipient extends DataObject
 
     /**
      * @param string $EoriNumber
-     * @return Recipient
+     * @return Consignee
      */
     public function setEoriNumber($EoriNumber)
     {
