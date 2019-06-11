@@ -22,6 +22,11 @@ namespace DPDBenelux\SDK;
 class GetLabel extends DataObject
 {
     /**
+     * @var bool
+     */
+    protected $GenerateLabel;
+
+    /**
      * @var \DPDBenelux\SDK\LabelRequest\PrintOptions $PrintOptions
      */
     protected $PrintOptions;
@@ -30,6 +35,22 @@ class GetLabel extends DataObject
      * @var \DPDBenelux\SDK\LabelRequest\Shipment[] $Shipments
      */
     protected $Shipments = array();
+
+    /**
+     * @return bool
+     */
+    public function isGenerateLabel()
+    {
+        return $this->GenerateLabel;
+    }
+
+    /**
+     * @param bool $GenerateLabel
+     */
+    public function setGenerateLabel($GenerateLabel)
+    {
+        $this->GenerateLabel = $GenerateLabel;
+    }
 
     /**
      * @return \DPDBenelux\SDK\LabelRequest\PrintOptions

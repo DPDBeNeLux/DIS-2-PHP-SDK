@@ -23,13 +23,13 @@ namespace DPDBenelux\SDK;
 class DpdClient
 {
 
-    const DPD_SHIPMENT_SERVICE_URL = 'ShipmentService.svc?singleWsdl';
-    const DPD_PARCELSHOP_URL_POSTFIX = 'ParcelShopFinderService.svc?singleWsdl';
+    const DPD_SHIPMENT_SERVICE_URL = 'ShipmentService_2.1.wsdl';
+    const DPD_PARCELSHOP_URL_POSTFIX = 'ParcelShopFinderService_2.1.wsdl';
 
-    const DPD_LOGIN_SERVICE_URL = 'LoginService.svc?singleWsdl';
+    const DPD_LOGIN_SERVICE_URL = 'LoginService_2.1.wsdl';
     const DPD_AUTH_URL = 'https://dis.dpd.nl/Types/Shared/Authentication';
-    const DPD_STAGING_SERVICE_URL = 'http://dis-accept.azurewebsites.net/Services/';
-    const DPD_LIVE_SERVICE_URL = 'https://dis.dpd.nl/Services/';
+    const DPD_STAGING_SERVICE_URL = 'https://dis.dpd.nl/manual/wsdl/CustomerTest_';
+    const DPD_LIVE_SERVICE_URL = 'https://dis.dpd.nl/manual/wsdl/Production_';
 
     protected $delisId;
 
